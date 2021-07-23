@@ -1,14 +1,14 @@
 
-const people = [ 'Lisa', 'Kaitlin', 'Jan' ];
 
-function writeCards(people) {
-  for (let i = 0; i < people.length; i++) {
-    console.log(`Thank you, ${people[i]} for the wonderful birthday gift!`);
-    debugger;
+function writeCards(myPeople, gift) {
+  let messages = []
+  for (let i = 0; i < myPeople.length; i++) {
+    messages.push( `Thank you, ${myPeople[i]}, for the wonderful ${gift} gift!`)
+    
   }
+    return messages 
 
 }
-writeCards();
 
 
 
@@ -22,9 +22,8 @@ function countDown() {
     while (countdown >= 0) {
       console.log(countdown);
       countdown--;
-      debugger;
+   
     } 
 }
- countDown(10);
 
 
